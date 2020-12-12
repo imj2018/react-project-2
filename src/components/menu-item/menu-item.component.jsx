@@ -1,12 +1,12 @@
 import React from 'react';
 import './menu-item.styles.scss';
 
-const MenuItem = ({ title, imageURL }) => (
+const MenuItem = ({ title, imageUrl, size}) => (
     <div
         style={{
-            backgroundImage: `url(${imageURL})`
+            backgroundImage: `url(${imageUrl})` // template literals, javascript interpolation stuff
         }}
-        className='menu-item'
+        className= {`${size} menu-item`}
     >
         <div className="content">
             <h1 className="title">{title}</h1>
